@@ -1,4 +1,7 @@
 .devis{
+  @media screen and (max-width: 959px) {
+    width: 550px !important;
+  }
   .devis-header{
     height: 400px;
     background-image: url("../../assets/images/devis/devis.jpg");
@@ -10,14 +13,29 @@
     }
   }
   .devis-body{
+    @media screen and (max-width: 959px) {
+      display: block;
+    }
     display: flex;
     margin-top: 70px;
     margin-bottom: 50px;
+    .content-devis{
+      .devis-img{
+        width: 500px;
+        @media screen and (max-width: 959px) {
+          width: 500px;
+        }
+      }
+    }
     .devis-form{
-      padding-right: 50px;
+      margin-left: 60px;
+      @media screen and (max-width: 959px) {
+        margin-left: 0px;
+      }
       .title{
         text-decoration: underline;
       }
     }
+
   }
 }
