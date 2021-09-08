@@ -10,7 +10,9 @@ import { DevisComponent } from './devis/devis.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MainFooterComponent } from './shared/main-footer/main-footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,14 +20,17 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     DevisComponent,
     GalerieComponent,
-    CarouselComponent
+    CarouselComponent,
+    MainFooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
